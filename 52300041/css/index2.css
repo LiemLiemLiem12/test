@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D6BCA7;
+
+}
+
+/* Header */
+.list-dropdown {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #807E78;
+    width: 20%;
+    text-align: center;
+}
+
+.header {
+    background-color: black;
+}
+
+.header > .row {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 30%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.button-to-action {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.button-to-action a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+/* Test */
+.navbar-brand > img {
+    width: 130px;
+    padding-left: 40px;
+}
+
+nav > ul > li {
+    margin-right: 100px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Thử với kích thước nhỏ hơn nếu cần */
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.navbar-nav {
+    gap: 50px; /* Điều chỉnh khoảng cách giữa các mục */
+}
+
+
+/* Header */
+
+/* Section 1 */
+.section-1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+
+/* End Section 1 */
+
+/* Section 2 */
+.section-2 {
+    margin-top: 80px;
+    height: 100px;
+}
+
+.section-2 form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-2 .row > *:first-child form{
+    padding-top: 0px;
+}
+
+.section-2 .row > :not(*:first-child) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.section-2 form.searching input {
+    width: 45%;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 0px;
+}
+
+.section-2 form.searching button {
+    height: 40px;
+    padding: 15px;
+    margin-left: 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.section-2 form.searching button:hover {
+    color: red;
+}
+
+.view-form {
+    margin-right: 25px;
+}
+
+.view-form form.view-page label {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.view-form form.view-page select {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+}
+
+.sort-form {
+    margin-right: 25px;
+}
+
+.sort-form form.view-page label {
+    font-size: 20px;
+    margin-right: 15px;
+    width: 70px;
+}
+
+.sort-form form.view-page > select {
+    height: 40px;
+    width: auto;
+}
+
+.information p {
+    text-align: center;
+}
+/* End Section 2 */
+
+/* Section 3 */
+
+.section-3 {
+    margin-top: 10px;
+}
+
+h3.medium-header {
+    font-weight: 300;
+    margin-bottom: 0px;
+    margin-top: 65px;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-3 p {
+    margin: 0px;
+}
+
+.list-category li {
+    display: flex;
+    margin-left: 0px;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+
+.list-category li p{
+    font-size: 17px;
+}
+
+.list-category li .icon-plus{
+    font-size: 27px;
+}
+
+.list-category ul {
+    padding-left: 10px;
+}
+
+.section-3 li::before {
+    content: "\25A0"; /* Unicode cho dấu chấm (bullet) */
+    position: relative;
+    left: -10px;
+    top: 2px;
+    font-size: 7px; /* Điều chỉnh kích thước dấu chấm */
+    line-height: 1; /* Đảm bảo dấu chấm căn chỉnh chính xác */
+}
+
+.section-3 .price form button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    background-color: #c6c6c6;
+    margin-top: 15px;
+}
+
+.section-3 .price form button:hover {
+    background-color: rgb(181, 0, 0);
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+} 
+
+.section-3 a .color-choice {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.section-3 a .color-choice:hover { 
+    border: 1px solid black;
+}
+
+.section-3 .color-choice.color-white {
+    background-color: white;
+}
+.section-3 .color-choice.color-gray {
+    background-color: rgb(127, 127, 127);
+}
+.section-3 .color-choice.color-blue {
+    background-color: rgb(0, 132, 255);
+}
+.section-3 .color-choice.color-red {
+    background-color: rgb(244, 20, 20);
+}
+.section-3 .color-choice.color-green {
+    background-color: rgb(16, 222, 37);
+}
+.section-3 .color-choice.color-darkblue {
+    background-color: rgb(3, 0, 96);
+}
+.section-3 .color-choice.color-human {
+    background-color: rgb(255, 248, 174);
+}
+.section-3 .color-choice.color-bluesky {
+    background-color: rgb(9, 191, 224);
+}
+
+.section-3 .color-choice.color-yellow {
+    background-color: rgb(238, 255, 0);
+}
+
+.section-3 .button-sample{
+    display: flex;
+    width: auto;
+    height: 40px;
+    padding: 20px 20px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.section-3 .button-sample:hover {
+    background-color: rgb(103, 103, 103);
+    color: white;
+}
+
+.section-3  a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.product-card {
+    width: 272px;
+    height: 390px;
+    margin-bottom: 120px;
+    margin-right: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 390px;
+}
+
+.product-card h4 {
+    margin-top: 15px;
+    font-weight: 400;
+}
+/* End Section 3 */
+
+footer {
+    background-color: black;
+    height: 150px;
+    margin-top: 20px;
+}
